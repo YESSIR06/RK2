@@ -1,0 +1,3 @@
+/home/magomedkhan/YESSIR06/workspace/RK2/build/CMakeFiles/message_handler.dir
+/home/magomedkhan/YESSIR06/workspace/RK2/build/CMakeFiles/edit_cache.dir
+/home/magomedkhan/YESSIR06/workspace/RK2/build/CMakeFiles/rebuild_cache.dir
