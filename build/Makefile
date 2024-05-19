@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magomedkhan/YESSIR06/workspace/RK2
+CMAKE_SOURCE_DIR = /home/magomedkhan/YESSIR06/workspace/123/RK2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magomedkhan/YESSIR06/workspace/RK2/build
+CMAKE_BINARY_DIR = /home/magomedkhan/YESSIR06/workspace/123/RK2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/magomedkhan/YESSIR06/workspace/RK2/build/CMakeFiles /home/magomedkhan/YESSIR06/workspace/RK2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles /home/magomedkhan/YESSIR06/workspace/123/RK2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/magomedkhan/YESSIR06/workspace/RK2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named message_handler
+# Target rules for targets named MessageHandlerLib
 
 # Build rule for target.
-message_handler: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 message_handler
-.PHONY : message_handler
+MessageHandlerLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MessageHandlerLib
+.PHONY : MessageHandlerLib
 
 # fast build rule for target.
-message_handler/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/message_handler.dir/build.make CMakeFiles/message_handler.dir/build
-.PHONY : message_handler/fast
+MessageHandlerLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MessageHandlerLib.dir/build.make CMakeFiles/MessageHandlerLib.dir/build
+.PHONY : MessageHandlerLib/fast
+
+#=============================================================================
+# Target rules for targets named MyExecutable
+
+# Build rule for target.
+MyExecutable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyExecutable
+.PHONY : MyExecutable
+
+# fast build rule for target.
+MyExecutable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
+.PHONY : MyExecutable/fast
+
+#=============================================================================
+# Target rules for targets named MyTests
+
+# Build rule for target.
+MyTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyTests
+.PHONY : MyTests
+
+# fast build rule for target.
+MyTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/build
+.PHONY : MyTests/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 message_handler.o: message_handler.cpp.o
 .PHONY : message_handler.o
 
 # target to build an object file
 message_handler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/message_handler.dir/build.make CMakeFiles/message_handler.dir/message_handler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MessageHandlerLib.dir/build.make CMakeFiles/MessageHandlerLib.dir/message_handler.cpp.o
 .PHONY : message_handler.cpp.o
 
 message_handler.i: message_handler.cpp.i
@@ -142,7 +192,7 @@ message_handler.i: message_handler.cpp.i
 
 # target to preprocess a source file
 message_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/message_handler.dir/build.make CMakeFiles/message_handler.dir/message_handler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MessageHandlerLib.dir/build.make CMakeFiles/MessageHandlerLib.dir/message_handler.cpp.i
 .PHONY : message_handler.cpp.i
 
 message_handler.s: message_handler.cpp.s
@@ -150,8 +200,32 @@ message_handler.s: message_handler.cpp.s
 
 # target to generate assembly for a file
 message_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/message_handler.dir/build.make CMakeFiles/message_handler.dir/message_handler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MessageHandlerLib.dir/build.make CMakeFiles/MessageHandlerLib.dir/message_handler.cpp.s
 .PHONY : message_handler.cpp.s
+
+message_handler_test.o: message_handler_test.cpp.o
+.PHONY : message_handler_test.o
+
+# target to build an object file
+message_handler_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/message_handler_test.cpp.o
+.PHONY : message_handler_test.cpp.o
+
+message_handler_test.i: message_handler_test.cpp.i
+.PHONY : message_handler_test.i
+
+# target to preprocess a source file
+message_handler_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/message_handler_test.cpp.i
+.PHONY : message_handler_test.cpp.i
+
+message_handler_test.s: message_handler_test.cpp.s
+.PHONY : message_handler_test.s
+
+# target to generate assembly for a file
+message_handler_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/message_handler_test.cpp.s
+.PHONY : message_handler_test.cpp.s
 
 # Help Target
 help:
@@ -161,10 +235,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... message_handler"
+	@echo "... MessageHandlerLib"
+	@echo "... MyExecutable"
+	@echo "... MyTests"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... message_handler.o"
 	@echo "... message_handler.i"
 	@echo "... message_handler.s"
+	@echo "... message_handler_test.o"
+	@echo "... message_handler_test.i"
+	@echo "... message_handler_test.s"
 .PHONY : help
 
 

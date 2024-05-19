@@ -103,17 +103,3 @@ MessageHandler::SessionState::HandleMessage(std::string const& message)
     Strategy Pattern과 유사한 점이 많은데, 차이점에 대해 잘 정리된 링크를 첨부합니다.
     (https://www.javabrahman.com/design-patterns/strategy-design-pattern-versus-state-design-pattern-analysis/)
 */
-int main()
-{
-    MessageHandler messageHandler;
-
-    messageHandler.HandleMessage("asdf");
-    messageHandler.HandleMessage("print I'm taeguk.");
-    messageHandler.HandleMessage("start_session Session_1");
-    messageHandler.HandleMessage("print I'm taeguk.");
-    messageHandler.HandleMessage("asdf");
-    messageHandler.HandleMessage("end_session");
-    messageHandler.HandleMessage("print better tomorrow");
-    messageHandler.HandleMessage("start_session Session_2");
-    messageHandler.HandleMessage("print better tomorrow");
-}

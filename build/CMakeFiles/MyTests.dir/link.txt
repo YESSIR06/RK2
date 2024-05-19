@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MyTests.dir/message_handler_test.cpp.o -o MyTests  libMessageHandlerLib.a /usr/local/lib/libgtest.a -lpthread 
