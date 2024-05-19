@@ -1,0 +1,2 @@
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/_CPack_Packages/Linux/TZ/MessageHandlerProject-0.1.1-Linux/bin/MyExecutable
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/_CPack_Packages/Linux/TZ/MessageHandlerProject-0.1.1-Linux/bin/MyTests

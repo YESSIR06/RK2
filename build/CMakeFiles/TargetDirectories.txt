@@ -1,5 +1,11 @@
 /home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/MessageHandlerLib.dir
 /home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/MyExecutable.dir
 /home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/MyTests.dir
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/package.dir
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/package_source.dir
 /home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/edit_cache.dir
 /home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/rebuild_cache.dir
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/list_install_components.dir
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/install.dir
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/install/local.dir
+/home/magomedkhan/YESSIR06/workspace/123/RK2/build/CMakeFiles/install/strip.dir

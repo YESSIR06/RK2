@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build, Test, and Package
 
 on:
   push:
@@ -41,3 +41,14 @@ jobs:
 
     - name: Run tests
       run: ./build/MyTests
+
+    - name: Package with CPack
+      run: |
+        cd build
+        cpack
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: myproject-artifact
+        path: build/*.zip
