@@ -58,7 +58,11 @@ TEST_F(MessageHandlerTest, HandleInvalidMessageInSession) {
     EXPECT_EQ(oss.str(), "[Session_1] \"asdf\" is invalid message.\n");
 }
 
-TEST(MessageHandlerTest, HandleEndSession) {
+TEST(TEST, Test) {
+    EXPECT_EQ(1, 1);
+}
+
+TEST_F(MessageHandlerTest, HandleEndSession) {
     handler->HandleMessage("start_session Session_1");
     std::ostringstream oss;
     CoutRedirect redirect(oss.rdbuf());
